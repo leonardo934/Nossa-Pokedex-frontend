@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="style.css">
+  <title>Tela de Login</title>
+</head>
+
+<body class="bg-danger">
+
+
+  <!--navbar-->
+  <nav class="navbar navbar-light bg-light fixed-top">
+    <div class="container-fluid">
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
+        aria-controls="offcanvasScrolling">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="#">Nossa Pokedex</a>
+      <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="true" tabindex="-1"
+        id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Tipos</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <p></p>
+        </div>
+
+
+
+        <div class="p-2">
+          <a type="button" href="../tela-de-login/index.html" class="btn btn-outline-dark">Sair</a>
+        </div>
+
+
+      </div>
+    </div>
+  </nav>
+  <!--fim navbar-->
+
+  <!--<div class="card" style="width: 18rem;">
+    <img src="https://i.pinimg.com/originals/63/66/88/6366884464981e102a8817a0a135f606.png" class="card-img-top" alt="charizard x">
+    <div class="card-body">
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+        content.</p>
+    </div>
+  </div>-->
+
+  <div class="container space-top-bottom">
+    <div class="row justify-content-center align-items-center">
+      <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 ">
+        <div class="bg-white shadow p-4 rounded border border-dark">
+
+          <!--<div class="row row-cols-1 row-cols-md-4 g-4 ">
+            <div class="col">
+              <div class="card" style="width: 100%;">
+                <img src="https://i.pinimg.com/originals/63/66/88/6366884464981e102a8817a0a135f606.png"
+                  class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                    additional content. This content is a little bit longer.</p>
+                </div>
+              </div>
+            </div>
+          </div>-->
+          <div class="row">
+            <div class="col-6 d-flex align-items-center">
+              <div class="row d-flex justify-content-center">
+                <div class="col-6">
+                  <img
+                    src="https://imagensemoldes.com.br/wp-content/uploads/2020/04/Pokebola-Pok%C3%A9mon-PNG-1024x1022.png"
+                    class="card-img-top mb-3" alt="Pokebola">
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6 d-flex align-items-center">
+              <div class="row d-flex justify-content-center">
+
+                <div class="col-8  ">
+                  <h2>Seja bem vindo treinador!</h2>
+                  <p>Para começar você prescisa escolher um pokemon dentre três opições disponíveis:</p>
+                  <div class="row d-flex justify-content-center">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ModalInicial">
+                      Capiture agora
+                    </button>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="ModalInicial" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog  modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+          <div class="row row-cols-1 row-cols-md-3 g-3">
+
+            <div class="col">
+              <div class="card shadow-lg " style="width: 100%;">
+                <img
+                  src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/6.png"
+                  class="card-img-top" alt="...">
+                <h3 class="card-title text-center mt-0">Charizard</h3>
+                <div class="row p-1">
+
+                  <div class="col-6 card-body">
+                    <h5 class="border-bottom border-3 border-dark">Status</h5>
+                    <div class="d-flex align-items-center">
+                      <span class="p-0 title-status">HP</span>
+                      <div class="progress p-0 progress-bar-status">
+                        <div class="progress-bar progress-bar-striped bg-success progress-bar-animated p-0"
+                          role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
+                          aria-valuemax="100"><strong>80</strong></div>
+                      </div>
+                    </div>
+
+                    <div class="d-flex align-items-center">
+                      <span class="p-0 title-status">ATK</span>
+                      <div class="progress p-0 progress-bar-status">
+                        <div class="progress-bar progress-bar-striped bg-danger progress-bar-animated"
+                          role="progressbar" style="width: 82%" aria-valuenow="82" aria-valuemin="0"
+                          aria-valuemax="100"><strong>82</strong></div>
+                      </div>
+                    </div>
+
+                    <div class="d-flex align-items-center">
+                      <span class="p-0 title-status">DFS</span>
+                      <div class="progress p-0 progress-bar-status">
+                        <div class="progress-bar progress-bar-striped bg-primary progress-bar-animated"
+                          role="progressbar" style="width: 83%" aria-valuenow="83" aria-valuemin="0"
+                          aria-valuemax="100"><strong>83</strong></div>
+                      </div>
+                    </div>
+
+                    <div class="d-flex align-items-center">
+                      <span class="p-0 title-status">ATK-SP</span>
+                      <div class="progress p-0 progress-bar-status">
+                        <div class="progress-bar progress-bar-striped bg-danger progress-bar-animated"
+                          role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0"
+                          aria-valuemax="100"><strong>100</strong></div>
+                      </div>
+                    </div>
+
+                    <div class="d-flex align-items-center">
+                      <span class="p-0 title-status">DFS-SP</span>
+                      <div class="progress p-0 progress-bar-status">
+                        <div class="progress-bar progress-bar-striped bg-primary progress-bar-animated"
+                          role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0"
+                          aria-valuemax="100"><strong>100</strong></div>
+                      </div>
+                    </div>
+
+                    <div class="d-flex align-items-center">
+                      <span class="p-0 title-status">SPD</span>
+                      <div class="progress p-0 progress-bar-status">
+                        <div class="progress-bar progress-bar-striped bg-warning progress-bar-animated"
+                          role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
+                          aria-valuemax="100"><strong>80</strong></div>
+                      </div>
+                    </div>
+
+
+                  </div>
+
+                  <div class="col-6 card-body ">
+                    <h5 class="border-bottom border-3 border-dark">Habilidades</h5>
+                    <p class="mb-1">blaze</p>
+                    <p class="mb-1">solar-power
+                    <p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+        <div class="modal-footer ">
+          <button type="button" class="btn btn-primary">Escolher</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Fim Modal -->
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

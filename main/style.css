@@ -1,0 +1,25 @@
+.space-top-bottom {
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+}
+
+.offcanvas-start {
+    width: 25rem;
+}
+
+.progress-bar-status{
+    width:100px; 
+    margin-left: 10px;
+    height: 20px;
+}
+
+.title-status{
+    width:80px;
+    text-align: center;        
+}
+
+@media only screen and (max-width: 768px) {
+    .offcanvas-start {
+        width: 75%;
+    }
+}
